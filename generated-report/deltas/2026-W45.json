@@ -1,0 +1,390 @@
+[
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "dimensions",
+    "fields": [],
+    "id": "D-COMPAT",
+    "kind": "added",
+    "title": "Framework compatibility"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "dimensions",
+    "fields": [],
+    "id": "D-DEPS",
+    "kind": "added",
+    "title": "Dependency viability"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "dimensions",
+    "fields": [],
+    "id": "D-ECON",
+    "kind": "added",
+    "title": "Effort & worthiness"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "dimensions",
+    "fields": [],
+    "id": "D-OPS",
+    "kind": "added",
+    "title": "Operational impact"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "dimensions",
+    "fields": [],
+    "id": "D-PLATFORM",
+    "kind": "added",
+    "title": "Runtime & platform"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "dimensions",
+    "fields": [],
+    "id": "D-SEC",
+    "kind": "added",
+    "title": "Security & compliance"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-API",
+    "kind": "added",
+    "title": "Are API and namespace adaptations bounded?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-AUTH",
+    "kind": "added",
+    "title": "Are authorization semantics equivalent?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-CAPACITY",
+    "kind": "added",
+    "title": "Is performance acceptable at peak load?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-DEPS",
+    "kind": "added",
+    "title": "Do maintained replacement libraries exist?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-EFFORT",
+    "kind": "added",
+    "title": "What effort range is defensible?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-LICENSE",
+    "kind": "added",
+    "title": "Are replacement licenses acceptable?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-RECOVERY",
+    "kind": "added",
+    "title": "Can operations sustain the candidate platform?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-ROI",
+    "kind": "added",
+    "title": "Are benefits and avoided costs worth the effort?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-RUNTIME",
+    "kind": "added",
+    "title": "Does the target runtime host representative workloads?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-SERIAL",
+    "kind": "added",
+    "title": "Can stored serialized sessions be read?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "investigations",
+    "fields": [],
+    "id": "I-SUPPORT",
+    "kind": "added",
+    "title": "Is the support lifecycle adequate?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "findings",
+    "fields": [],
+    "id": "F-API",
+    "kind": "added",
+    "title": "API adaptation appears bounded"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "findings",
+    "fields": [],
+    "id": "F-DEPS",
+    "kind": "added",
+    "title": "Unmaintained integration wrappers"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "findings",
+    "fields": [],
+    "id": "F-SERIAL",
+    "kind": "added",
+    "title": "Session compatibility hypothesis"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-ASSUME",
+    "kind": "added",
+    "title": "Assumed serialization equivalence after namespace adaptation."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-DEPS",
+    "kind": "added",
+    "title": "Synthetic dependency inventory and candidate maintenance scan."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-MODEL",
+    "kind": "added",
+    "title": "Synthetic effort scenario model with explicitly incomplete benefits."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-SCAN",
+    "kind": "added",
+    "title": "Synthetic static namespace/API inventory across six modules."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "risks",
+    "fields": [],
+    "id": "R-WRAPPERS",
+    "kind": "added",
+    "title": "Unmaintained wrappers may require custom replacement and increase effort."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "questions",
+    "fields": [],
+    "id": "Q-LEGAL",
+    "kind": "added",
+    "title": "Are candidate replacement licenses acceptable?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "questions",
+    "fields": [],
+    "id": "Q-ROI",
+    "kind": "added",
+    "title": "What counterfactual cost and benefit horizon should management use?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "questions",
+    "fields": [],
+    "id": "Q-SERIAL",
+    "kind": "added",
+    "title": "Will legacy session fixtures deserialize safely?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "alternatives",
+    "fields": [],
+    "id": "ALT-REPLACE",
+    "kind": "added",
+    "title": "Replace with a new service implementation"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "alternatives",
+    "fields": [],
+    "id": "ALT-RETAIN",
+    "kind": "added",
+    "title": "Retain the current platform"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "alternatives",
+    "fields": [],
+    "id": "ALT-STAGED",
+    "kind": "added",
+    "title": "Assess a staged modernization"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "estimates",
+    "fields": [],
+    "id": "EST-BENEFIT",
+    "kind": "added",
+    "title": "Recurring economic benefit"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "estimates",
+    "fields": [],
+    "id": "EST-COST",
+    "kind": "added",
+    "title": "One-time external assessment of transition costs"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "estimates",
+    "fields": [],
+    "id": "EST-EFFORT",
+    "kind": "added",
+    "title": "Technical adaptation effort"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "gates",
+    "fields": [],
+    "id": "G-COMPAT",
+    "kind": "added",
+    "title": "Representative compatibility evidence"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "gates",
+    "fields": [],
+    "id": "G-DEPS",
+    "kind": "added",
+    "title": "Maintained dependency path demonstrated"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "gates",
+    "fields": [],
+    "id": "G-ECON",
+    "kind": "added",
+    "title": "Defensible worthiness model"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "gates",
+    "fields": [],
+    "id": "G-OPS",
+    "kind": "added",
+    "title": "Operational recovery assessment"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "decisions",
+    "fields": [],
+    "id": "DEC-EXPERIMENT",
+    "kind": "added",
+    "title": "Authorize two assessment experiments"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "recommendations",
+    "fields": [],
+    "id": "REC-ATLAS",
+    "kind": "added",
+    "title": "Recommendation pending; continue targeted assessment."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "activities",
+    "fields": [],
+    "id": "ACT-RESEARCH",
+    "kind": "added",
+    "title": "Serialization and transaction research experiments"
+  },
+  {
+    "afterRevision": null,
+    "beforeRevision": null,
+    "collection": "executiveSummary",
+    "fields": [
+      {
+        "after": [
+          "The compatibility investigation has identified a plausible adaptation route, but no migration decision is justified yet.",
+          "Dependency and security findings remain preliminary. Economics and operational recovery are materially underexamined.",
+          "Management should fund targeted validation experiments rather than approve implementation on current evidence."
+        ],
+        "before": null,
+        "field": "executiveSummary"
+      }
+    ],
+    "id": "summary",
+    "kind": "revised",
+    "title": "Executive synthesis updated"
+  }
+]

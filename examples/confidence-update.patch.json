@@ -1,0 +1,5 @@
+[
+  {"op": "test", "path": "/findings/F-API/confidence", "value": "high"},
+  {"op": "replace", "path": "/findings/F-API/confidence", "value": "medium"},
+  {"op": "replace", "path": "/findings/F-API/uncertainties", "value": ["Distributed recovery excluded", "Additional production-representative fixtures needed"]}
+]

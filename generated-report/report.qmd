@@ -1,0 +1,18 @@
+---
+pagetitle: "Assessment Intelligence | Executive Report"
+lang: en
+page-layout: custom
+format:
+  html:
+    theme: default
+    toc: false
+    embed-resources: true
+    anchor-sections: false
+    smooth-scroll: false
+    html-math-method: plain
+    include-in-header: _style.html
+    include-after-body: _app.html
+    output-file: index.html
+---
+
+<!-- Content is supplied to the fixed, versioned assessment component catalog. -->

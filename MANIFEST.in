@@ -1,0 +1,8 @@
+include readme.md LICENSE requirements-lock.txt
+recursive-include docs *.md
+recursive-include schemas *.json
+recursive-include samples *.md
+recursive-include examples *.json
+recursive-include config *.json
+recursive-include scripts *.py
+recursive-include tests *.py *.png

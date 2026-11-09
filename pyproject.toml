@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assessment-intelligence"
+version = "1.0.0"
+description = "Evidence-backed modernization assessment reports with immutable history"
+readme = "readme.md"
+requires-python = ">=3.11"
+dependencies = ["PyYAML==6.0.3", "jsonschema==4.25.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "build==1.3.0", "playwright==1.55.0", "Pillow==11.3.0"]
+
+[project.scripts]
+assess = "assessment_intelligence.cli:main"
+
+[tool.setuptools.package-data]
+assessment_intelligence = ["assets/*", "*.schema.json"]
+
+[tool.setuptools.packages.find]
+include = ["assessment_intelligence*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

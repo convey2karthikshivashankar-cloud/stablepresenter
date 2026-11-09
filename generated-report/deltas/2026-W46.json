@@ -1,0 +1,658 @@
+[
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "validated",
+        "before": "preliminary",
+        "field": "status"
+      }
+    ],
+    "id": "I-API",
+    "kind": "revised",
+    "title": "Are API and namespace adaptations bounded?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "corroborated",
+        "before": "preliminary",
+        "field": "status"
+      }
+    ],
+    "id": "I-DEPS",
+    "kind": "revised",
+    "title": "Do maintained replacement libraries exist?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "preliminary",
+        "before": "investigating",
+        "field": "status"
+      }
+    ],
+    "id": "I-LICENSE",
+    "kind": "revised",
+    "title": "Are replacement licenses acceptable?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "investigating",
+        "before": "not-examined",
+        "field": "status"
+      }
+    ],
+    "id": "I-RECOVERY",
+    "kind": "revised",
+    "title": "Can operations sustain the candidate platform?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "investigating",
+        "before": "not-examined",
+        "field": "status"
+      }
+    ],
+    "id": "I-ROI",
+    "kind": "revised",
+    "title": "Are benefits and avoided costs worth the effort?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "preliminary",
+        "before": "investigating",
+        "field": "status"
+      }
+    ],
+    "id": "I-RUNTIME",
+    "kind": "revised",
+    "title": "Does the target runtime host representative workloads?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "corroborated",
+        "before": "not-examined",
+        "field": "status"
+      }
+    ],
+    "id": "I-SERIAL",
+    "kind": "revised",
+    "title": "Can stored serialized sessions be read?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "investigations",
+    "fields": [
+      {
+        "after": "inconclusive",
+        "before": "not-examined",
+        "field": "status"
+      }
+    ],
+    "id": "I-SUPPORT",
+    "kind": "revised",
+    "title": "Is the support lifecycle adequate?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "findings",
+    "fields": [],
+    "id": "F-ADAPTER",
+    "kind": "added",
+    "title": "Explicit session adapter required"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "findings",
+    "fields": [
+      {
+        "after": "The representative transaction slice passes all 18 rollback cases with the adapter layer.",
+        "before": "The sampled API surface suggests a manageable adapter layer; estate-wide extrapolation is premature.",
+        "field": "conclusion"
+      },
+      {
+        "after": "high",
+        "before": "medium",
+        "field": "confidence"
+      },
+      {
+        "after": [
+          "E-TX"
+        ],
+        "before": [
+          "E-SCAN"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "Test failure recovery under restart.",
+        "before": "Validate transaction slices.",
+        "field": "nextInvestigation"
+      },
+      {
+        "after": "validated",
+        "before": "preliminary",
+        "field": "status"
+      },
+      {
+        "after": "Representative API adaptation validated",
+        "before": "API adaptation appears bounded",
+        "field": "title"
+      },
+      {
+        "after": [
+          "Distributed recovery excluded"
+        ],
+        "before": [
+          "Generated code not scanned"
+        ],
+        "field": "uncertainties"
+      }
+    ],
+    "id": "F-API",
+    "kind": "strengthened",
+    "title": "Representative API adaptation validated"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "findings",
+    "fields": [
+      {
+        "after": "Two maintained replacement candidates pass smoke checks; one wrapper and license exception remain unresolved.",
+        "before": "Three candidate wrappers lack a demonstrated maintenance path.",
+        "field": "conclusion"
+      },
+      {
+        "after": "medium",
+        "before": "low",
+        "field": "confidence"
+      },
+      {
+        "after": [
+          "E-DEPS",
+          "E-DEPS2"
+        ],
+        "before": [
+          "E-DEPS"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "mixed",
+        "before": "adverse",
+        "field": "impact"
+      },
+      {
+        "after": "Resolve license and isolation questions.",
+        "before": "Investigate maintained replacements.",
+        "field": "nextInvestigation"
+      },
+      {
+        "after": "corroborated",
+        "before": "preliminary",
+        "field": "status"
+      },
+      {
+        "after": "Dependency path partially corroborated",
+        "before": "Unmaintained integration wrappers",
+        "field": "title"
+      },
+      {
+        "after": [
+          "License exception not approved",
+          "Third wrapper untested"
+        ],
+        "before": [
+          "Replacement license costs unknown"
+        ],
+        "field": "uncertainties"
+      }
+    ],
+    "id": "F-DEPS",
+    "kind": "strengthened",
+    "title": "Dependency path partially corroborated"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "findings",
+    "fields": [
+      {
+        "after": "Nine of 32 synthetic legacy fixtures fail without an explicit serialization adapter. The prior assumption is contradicted.",
+        "before": "Namespace-only adaptation is assumed to preserve serialized session behavior.",
+        "field": "conclusion"
+      },
+      {
+        "after": "low",
+        "before": "high",
+        "field": "confidence"
+      },
+      {
+        "after": [
+          "E-SERIAL"
+        ],
+        "before": [
+          "E-ASSUME"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "adverse",
+        "before": "favorable",
+        "field": "impact"
+      },
+      {
+        "after": "Use F-ADAPTER for subsequent evaluation.",
+        "before": "Test old session fixtures.",
+        "field": "nextInvestigation"
+      },
+      {
+        "after": "contradicted",
+        "before": "preliminary",
+        "field": "status"
+      },
+      {
+        "after": "Namespace-only session hypothesis contradicted",
+        "before": "Session compatibility hypothesis",
+        "field": "title"
+      },
+      {
+        "after": [
+          "Legacy session diversity unknown"
+        ],
+        "before": [
+          "No deserialization evidence"
+        ],
+        "field": "uncertainties"
+      }
+    ],
+    "id": "F-SERIAL",
+    "kind": "contradicted",
+    "title": "Namespace-only session hypothesis contradicted"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-DEPS2",
+    "kind": "added",
+    "title": "Complete synthetic direct inventory with two interface smoke checks."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-MODEL2",
+    "kind": "added",
+    "title": "Revised synthetic effort model incorporating session adapter work."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-SERIAL",
+    "kind": "added",
+    "title": "Synthetic legacy fixture experiment: 9/32 fail without adapter; 32/32 pass with adapter."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "evidence",
+    "fields": [],
+    "id": "E-TX",
+    "kind": "added",
+    "title": "Synthetic transaction rollback experiment: 18/18 passed on a representative slice."
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "risks",
+    "fields": [],
+    "id": "R-SESSION",
+    "kind": "added",
+    "title": "Stored session incompatibility raises adaptation effort and backward-compatibility uncertainty."
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "questions",
+    "fields": [
+      {
+        "after": [
+          "E-SERIAL"
+        ],
+        "before": [
+          "E-ASSUME"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "Expand production-representative fixture diversity.",
+        "before": "Run a negative and positive fixture matrix.",
+        "field": "nextStep"
+      },
+      {
+        "after": "answered",
+        "before": "open",
+        "field": "status"
+      }
+    ],
+    "id": "Q-SERIAL",
+    "kind": "resolved",
+    "title": "Will legacy session fixtures deserialize safely?"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "questions",
+    "fields": [],
+    "id": "Q-SUPPORT",
+    "kind": "added",
+    "title": "Which support terms and security policy oracle are authoritative?"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "estimates",
+    "fields": [
+      {
+        "after": [
+          "Explicit serialization adapter now required",
+          "Includes wrapper isolation uncertainty",
+          "Excludes rollout and unassessed recovery effort"
+        ],
+        "before": [
+          "Two reusable adapters in the low case",
+          "Three wrapper replacements in the high case",
+          "Excludes rollout and recovery"
+        ],
+        "field": "assumptions"
+      },
+      {
+        "after": "medium",
+        "before": "low",
+        "field": "confidence"
+      },
+      {
+        "after": [
+          "E-MODEL2",
+          "E-SERIAL"
+        ],
+        "before": [
+          "E-MODEL"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": 155,
+        "before": 100,
+        "field": "high"
+      },
+      {
+        "after": 95,
+        "before": 60,
+        "field": "low"
+      }
+    ],
+    "id": "EST-EFFORT",
+    "kind": "revised",
+    "title": "Technical adaptation effort"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "gates",
+    "fields": [
+      {
+        "after": [
+          "E-TX",
+          "E-SERIAL"
+        ],
+        "before": [
+          "E-SCAN"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "Sampled API and serialization behavior is evidenced; this gate is limited to representative evidence.",
+        "before": "Runtime and serialization experiments missing.",
+        "field": "rationale"
+      },
+      {
+        "after": "met",
+        "before": "unmet",
+        "field": "status"
+      }
+    ],
+    "id": "G-COMPAT",
+    "kind": "revised",
+    "title": "Representative compatibility evidence"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "gates",
+    "fields": [
+      {
+        "after": [
+          "E-DEPS2"
+        ],
+        "before": [
+          "E-DEPS"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "A representative maintained replacement path is documented; complete legal clearance is tracked separately.",
+        "before": "Candidate replacements not yet tested.",
+        "field": "rationale"
+      },
+      {
+        "after": "met",
+        "before": "unknown",
+        "field": "status"
+      }
+    ],
+    "id": "G-DEPS",
+    "kind": "revised",
+    "title": "Maintained dependency path demonstrated"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "gates",
+    "fields": [
+      {
+        "after": "Investigation started, but no restore/replay evidence is available.",
+        "before": "No recovery investigation completed.",
+        "field": "rationale"
+      },
+      {
+        "after": "unmet",
+        "before": "unknown",
+        "field": "status"
+      }
+    ],
+    "id": "G-OPS",
+    "kind": "revised",
+    "title": "Operational recovery assessment"
+  },
+  {
+    "afterRevision": 1,
+    "beforeRevision": null,
+    "collection": "decisions",
+    "fields": [],
+    "id": "DEC-COUNTERFACTUAL",
+    "kind": "added",
+    "title": "Agree an economic counterfactual and horizon"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "decisions",
+    "fields": [
+      {
+        "after": [
+          "E-TX",
+          "E-SERIAL"
+        ],
+        "before": [
+          "E-SCAN"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "Assessment experiment funding approved. This does not approve migration execution.",
+        "before": "Resolve the most material compatibility uncertainties before a migration decision.",
+        "field": "rationale"
+      },
+      {
+        "after": "approved",
+        "before": "proposed",
+        "field": "status"
+      }
+    ],
+    "id": "DEC-EXPERIMENT",
+    "kind": "revised",
+    "title": "Authorize two assessment experiments"
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "recommendations",
+    "fields": [
+      {
+        "after": "Defer migration commitment; continue focused assessment.",
+        "before": "Recommendation pending; continue targeted assessment.",
+        "field": "conclusion"
+      },
+      {
+        "after": "recommended",
+        "before": "pending",
+        "field": "decisionStatus"
+      },
+      {
+        "after": [
+          "Unknown benefits",
+          "No recovery evidence",
+          "License exception unresolved"
+        ],
+        "before": [
+          "Sampled modules only",
+          "No validated benefit model"
+        ],
+        "field": "limitations"
+      },
+      {
+        "after": "Technical feasibility is increasingly evidenced, but worthiness is not established without the economic counterfactual and recovery assessment.",
+        "before": "Compatibility evidence is promising but economics and recovery remain unexplored.",
+        "field": "rationale"
+      },
+      {
+        "after": "defer",
+        "before": "pending",
+        "field": "stance"
+      },
+      {
+        "after": [
+          "F-API",
+          "F-ADAPTER",
+          "F-DEPS"
+        ],
+        "before": [
+          "F-API",
+          "F-DEPS"
+        ],
+        "field": "supportingFindings"
+      }
+    ],
+    "id": "REC-ATLAS",
+    "kind": "revised",
+    "title": "Defer migration commitment; continue focused assessment."
+  },
+  {
+    "afterRevision": 2,
+    "beforeRevision": 1,
+    "collection": "activities",
+    "fields": [
+      {
+        "after": [
+          "E-TX",
+          "E-SERIAL"
+        ],
+        "before": [
+          "E-ASSUME"
+        ],
+        "field": "evidenceRefs"
+      },
+      {
+        "after": "Investigate operational recovery and broaden fixtures.",
+        "before": "Use synthetic fixtures and preserve raw observations.",
+        "field": "nextStep"
+      },
+      {
+        "after": "completed",
+        "before": "planned",
+        "field": "status"
+      }
+    ],
+    "id": "ACT-RESEARCH",
+    "kind": "revised",
+    "title": "Serialization and transaction research experiments"
+  },
+  {
+    "afterRevision": null,
+    "beforeRevision": null,
+    "collection": "executiveSummary",
+    "fields": [
+      {
+        "after": [
+          "The week changed our understanding: namespace-only session compatibility was contradicted; an explicit adapter is now evidenced on synthetic fixtures.",
+          "Representative transaction evidence strengthened, and dependency alternatives partially matured. Technical adaptation effort rises to 95–155 person-days.",
+          "Defer migration commitment: benefits remain unknown and operational recovery is insufficiently assessed. Next priorities are the economic counterfactual, recovery experiment and license position."
+        ],
+        "before": [
+          "The compatibility investigation has identified a plausible adaptation route, but no migration decision is justified yet.",
+          "Dependency and security findings remain preliminary. Economics and operational recovery are materially underexamined.",
+          "Management should fund targeted validation experiments rather than approve implementation on current evidence."
+        ],
+        "field": "executiveSummary"
+      }
+    ],
+    "id": "summary",
+    "kind": "revised",
+    "title": "Executive synthesis updated"
+  }
+]

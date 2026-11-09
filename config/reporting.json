@@ -1,0 +1,5 @@
+{
+  "periodFormat": "{year}-W{week:02d}",
+  "scheduleTimezone": "Asia/Kolkata",
+  "scheduleDescription": "Optional workstation scheduler: run weekly after review; report as-of dates remain explicit inputs."
+}

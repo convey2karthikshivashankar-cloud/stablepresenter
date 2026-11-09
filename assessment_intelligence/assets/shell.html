@@ -1,0 +1,20 @@
+<div id="assessment-app">
+  <aside class="rail" aria-label="Report navigation">
+    <a class="brand" href="#overview"><span class="brand-mark">a<span>i</span></span><span>Assessment<br><strong>Intelligence</strong></span></a>
+    <div class="rail-label">RESEARCH / DECISION SUPPORT</div>
+    <nav id="navigation"></nav>
+    <div class="rail-foot"><span class="live-dot"></span> Fixed presentation · v1.0<br><small>Content evolves. The interface stays.</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><span class="eyebrow">STRATEGY & ARCHITECTURE</span><span class="phase">Assessment phase</span></div><div class="tools"><button id="theme-toggle" aria-label="Toggle dark theme">◐ Theme</button><button id="export-json">↓ Data</button><button id="print-report">Print / PDF</button></div></header>
+    <main id="main-content">
+      <div class="masthead"><div><div class="eyebrow" id="report-period"></div><h1 id="program-title"></h1><p id="program-subtitle"></p></div><div class="snapshot-control"><label for="snapshot-select">Approved report</label><select id="snapshot-select"></select><small id="approval-label"></small></div></div>
+      <div id="sample-banner" class="sample-banner"></div>
+      <div class="page-heading"><div><span class="section-number" id="section-number"></span><h2 id="section-title"></h2></div><div class="search-wrap"><label class="sr-only" for="global-search">Search current section</label><input type="search" id="global-search" placeholder="Search this section…"><span id="search-count" aria-live="polite"></span></div></div>
+      <div id="panels"></div>
+      <footer>Assessment Intelligence · <span id="footer-date"></span> · Research maturity, not migration delivery<br><span id="state-hash"></span></footer>
+    </main>
+  </div>
+  <dialog id="evidence-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title">Evidence detail</h2><button id="close-dialog" aria-label="Close evidence detail">×</button></div><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status"></div>
+</div>

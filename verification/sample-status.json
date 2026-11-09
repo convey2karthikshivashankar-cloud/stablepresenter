@@ -1,0 +1,75 @@
+{
+  "hash": "8339db9fa5ba607921d075c5140cf2867b50d19aecb2254a685189501397d574",
+  "asOf": "2026-11-09",
+  "metrics": {
+    "coverage": 74.2,
+    "dimensions": [
+      {
+        "id": "D-COMPAT",
+        "title": "Framework compatibility",
+        "weight": 25,
+        "examined": 3,
+        "planned": 3,
+        "coverage": 100.0
+      },
+      {
+        "id": "D-DEPS",
+        "title": "Dependency viability",
+        "weight": 20,
+        "examined": 3,
+        "planned": 3,
+        "coverage": 100.0
+      },
+      {
+        "id": "D-ECON",
+        "title": "Effort & worthiness",
+        "weight": 20,
+        "examined": 1,
+        "planned": 3,
+        "coverage": 33.3
+      },
+      {
+        "id": "D-OPS",
+        "title": "Operational impact",
+        "weight": 5,
+        "examined": 0,
+        "planned": 1,
+        "coverage": 0.0
+      },
+      {
+        "id": "D-PLATFORM",
+        "title": "Runtime & platform",
+        "weight": 15,
+        "examined": 1,
+        "planned": 2,
+        "coverage": 50.0
+      },
+      {
+        "id": "D-SEC",
+        "title": "Security & compliance",
+        "weight": 15,
+        "examined": 2,
+        "planned": 2,
+        "coverage": 100.0
+      }
+    ],
+    "evidenceValidated": 2,
+    "evidenceTotal": 8,
+    "evidencePct": 25.0,
+    "corroboratedFindings": 3,
+    "findingsTotal": 4,
+    "openQuestions": 3,
+    "gatesMet": 2,
+    "gatesTotal": 4,
+    "readinessPct": 50.0,
+    "blockingGates": [
+      "G-ECON",
+      "G-OPS"
+    ],
+    "criticalFindings": 1
+  },
+  "approvedPeriods": [
+    "2026-W45",
+    "2026-W46"
+  ]
+}

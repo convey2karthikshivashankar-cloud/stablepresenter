@@ -1,0 +1,16 @@
+{
+  "approvedHashes": [
+    "726c6084703d0e3614f1f8f4be1ca4078f5cb2294ba26a0c34612ac22358249e",
+    "8339db9fa5ba607921d075c5140cf2867b50d19aecb2254a685189501397d574"
+  ],
+  "htmlSha256": "72304155b93842af067e9e85141bdf6915b50b57b00dbf2c2227ad3b05002321",
+  "quartoVersion": "1.11.9",
+  "renderedAsOf": "2026-11-09",
+  "schemaVersion": "1.0",
+  "templateHashes": {
+    "app.js": "a6c11a8b27c67486cf1d5da7a7a76e16e89fa1067cd6ca86da778dceeb6598ca",
+    "shell.html": "7cbeefa8abfb0232f15a060ca8d6f7199b700bf1561a6c4045fa6e0ba9818e6e",
+    "theme.css": "b763624feb7b26effcea5c3090e6f17bf0253b443bf53bb2c6545775cad87481"
+  },
+  "uiVersion": "1.0"
+}

@@ -1,0 +1,1196 @@
+{
+  "hash": "8339db9fa5ba607921d075c5140cf2867b50d19aecb2254a685189501397d574",
+  "parentHash": "726c6084703d0e3614f1f8f4be1ca4078f5cb2294ba26a0c34612ac22358249e",
+  "provenance": {
+    "actor": "synthetic-research-agent",
+    "at": "2026-11-09T14:46:04.533731+00:00",
+    "details": {
+      "changedSources": [
+        "04-runtime-validation.md",
+        "05-dependency-and-security-review.md",
+        "06-worthiness-reassessment.md"
+      ],
+      "skippedSources": []
+    },
+    "operation": "ingest"
+  },
+  "state": {
+    "activities": {
+      "ACT-RESEARCH": {
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [
+          "E-TX",
+          "E-SERIAL"
+        ],
+        "id": "ACT-RESEARCH",
+        "nextStep": "Investigate operational recovery and broaden fixtures.",
+        "owner": "Research agents + reviewer",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "completed",
+        "title": "Serialization and transaction research experiments",
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "alternatives": {
+      "ALT-REPLACE": {
+        "assumptions": [
+          "Business processes can be re-specified"
+        ],
+        "benefits": [
+          "Potential simplification"
+        ],
+        "createdAt": "2026-11-02",
+        "description": "Replace with a new service implementation",
+        "drawbacks": [
+          "Functional parity and data migration unassessed"
+        ],
+        "effortEstimate": "Not yet measurable",
+        "evidenceRefs": [],
+        "id": "ALT-REPLACE",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 1
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verdict": "unassessed"
+      },
+      "ALT-RETAIN": {
+        "assumptions": [
+          "Current support remains purchasable"
+        ],
+        "benefits": [
+          "No immediate conversion expenditure"
+        ],
+        "createdAt": "2026-11-02",
+        "description": "Retain the current platform",
+        "drawbacks": [
+          "Unquantified support and opportunity costs"
+        ],
+        "effortEstimate": "Unknown; support stabilization not estimated",
+        "evidenceRefs": [
+          "E-MODEL"
+        ],
+        "id": "ALT-RETAIN",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 1
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verdict": "viable"
+      },
+      "ALT-STAGED": {
+        "assumptions": [
+          "Representative slices predict key compatibility risks"
+        ],
+        "benefits": [
+          "Limits exposure while testing critical hypotheses"
+        ],
+        "createdAt": "2026-11-02",
+        "description": "Assess a staged modernization",
+        "drawbacks": [
+          "Parallel-platform overhead remains unknown"
+        ],
+        "effortEstimate": "See EST-EFFORT; not a delivery commitment",
+        "evidenceRefs": [
+          "E-SCAN",
+          "E-MODEL"
+        ],
+        "id": "ALT-STAGED",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 1
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verdict": "preferred"
+      }
+    },
+    "asOf": "2026-11-09",
+    "decisions": {
+      "DEC-COUNTERFACTUAL": {
+        "createdAt": "2026-11-09",
+        "dueOn": "2026-11-16",
+        "evidenceRefs": [
+          "E-MODEL2"
+        ],
+        "id": "DEC-COUNTERFACTUAL",
+        "owner": "Finance sponsor",
+        "rationale": "Worthiness cannot be evaluated without a baseline and horizon.",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "06-worthiness-reassessment.md",
+            "sourceHash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0",
+            "startLine": 1
+          }
+        ],
+        "status": "proposed",
+        "title": "Agree an economic counterfactual and horizon",
+        "updatedAt": "2026-11-09"
+      },
+      "DEC-EXPERIMENT": {
+        "createdAt": "2026-11-02",
+        "dueOn": "2026-11-06",
+        "evidenceRefs": [
+          "E-TX",
+          "E-SERIAL"
+        ],
+        "id": "DEC-EXPERIMENT",
+        "owner": "Architecture sponsor",
+        "rationale": "Assessment experiment funding approved. This does not approve migration execution.",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "06-worthiness-reassessment.md",
+            "sourceHash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0",
+            "startLine": 1
+          }
+        ],
+        "status": "approved",
+        "title": "Authorize two assessment experiments",
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "dimensions": {
+      "D-COMPAT": {
+        "coverageStatus": "investigating",
+        "createdAt": "2026-11-02",
+        "description": "Planned assessment dimension for the Atlas modernization study.",
+        "evidenceMaturity": "low",
+        "id": "D-COMPAT",
+        "revision": 1,
+        "scope": "API, namespace, serialization and transaction semantics",
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "title": "Framework compatibility",
+        "updatedAt": "2026-11-02",
+        "weight": 25
+      },
+      "D-DEPS": {
+        "coverageStatus": "investigating",
+        "createdAt": "2026-11-02",
+        "description": "Planned assessment dimension for the Atlas modernization study.",
+        "evidenceMaturity": "low",
+        "id": "D-DEPS",
+        "revision": 1,
+        "scope": "Direct and transitive dependency maintenance and licensing",
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "title": "Dependency viability",
+        "updatedAt": "2026-11-02",
+        "weight": 20
+      },
+      "D-ECON": {
+        "coverageStatus": "investigating",
+        "createdAt": "2026-11-02",
+        "description": "Planned assessment dimension for the Atlas modernization study.",
+        "evidenceMaturity": "low",
+        "id": "D-ECON",
+        "revision": 1,
+        "scope": "Uncertainty-bounded effort, costs, benefits and alternatives",
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "title": "Effort & worthiness",
+        "updatedAt": "2026-11-02",
+        "weight": 20
+      },
+      "D-OPS": {
+        "coverageStatus": "not-examined",
+        "createdAt": "2026-11-02",
+        "description": "Planned assessment dimension for the Atlas modernization study.",
+        "evidenceMaturity": "unknown",
+        "id": "D-OPS",
+        "revision": 1,
+        "scope": "Recovery, observability, on-call and data-handling readiness",
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "title": "Operational impact",
+        "updatedAt": "2026-11-02",
+        "weight": 5
+      },
+      "D-PLATFORM": {
+        "coverageStatus": "investigating",
+        "createdAt": "2026-11-02",
+        "description": "Planned assessment dimension for the Atlas modernization study.",
+        "evidenceMaturity": "low",
+        "id": "D-PLATFORM",
+        "revision": 1,
+        "scope": "Representative application-server, JDK and operational fit",
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "title": "Runtime & platform",
+        "updatedAt": "2026-11-02",
+        "weight": 15
+      },
+      "D-SEC": {
+        "coverageStatus": "investigating",
+        "createdAt": "2026-11-02",
+        "description": "Planned assessment dimension for the Atlas modernization study.",
+        "evidenceMaturity": "low",
+        "id": "D-SEC",
+        "revision": 1,
+        "scope": "Security controls, support lifecycle and access boundaries",
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "title": "Security & compliance",
+        "updatedAt": "2026-11-02",
+        "weight": 15
+      }
+    },
+    "estimates": {
+      "EST-BENEFIT": {
+        "assumptions": [
+          "Benefit horizon and counterfactual not yet agreed"
+        ],
+        "category": "benefit",
+        "confidence": "unknown",
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [],
+        "high": null,
+        "id": "EST-BENEFIT",
+        "low": null,
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 1
+          }
+        ],
+        "title": "Recurring economic benefit",
+        "unit": "USD/year",
+        "updatedAt": "2026-11-02"
+      },
+      "EST-COST": {
+        "assumptions": [
+          "Synthetic quotes",
+          "Licensing renegotiation excluded"
+        ],
+        "category": "cost",
+        "confidence": "low",
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [
+          "E-MODEL"
+        ],
+        "high": 65000,
+        "id": "EST-COST",
+        "low": 35000,
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 1
+          }
+        ],
+        "title": "One-time external assessment of transition costs",
+        "unit": "USD",
+        "updatedAt": "2026-11-02"
+      },
+      "EST-EFFORT": {
+        "assumptions": [
+          "Explicit serialization adapter now required",
+          "Includes wrapper isolation uncertainty",
+          "Excludes rollout and unassessed recovery effort"
+        ],
+        "category": "effort",
+        "confidence": "medium",
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [
+          "E-MODEL2",
+          "E-SERIAL"
+        ],
+        "high": 155,
+        "id": "EST-EFFORT",
+        "low": 95,
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "06-worthiness-reassessment.md",
+            "sourceHash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0",
+            "startLine": 1
+          }
+        ],
+        "title": "Technical adaptation effort",
+        "unit": "person-days",
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "evidence": {
+      "E-ASSUME": {
+        "capturedAt": "2026-11-02",
+        "createdAt": "2026-11-02",
+        "description": "Assumed serialization equivalence after namespace adaptation.",
+        "id": "E-ASSUME",
+        "kind": "assumption",
+        "limitations": "No fixture-based test exists.",
+        "reviewedBy": "unreviewed",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 23,
+            "path": "02-technical-analysis.md",
+            "sourceHash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verificationStatus": "unverified"
+      },
+      "E-DEPS": {
+        "capturedAt": "2026-11-02",
+        "createdAt": "2026-11-02",
+        "description": "Synthetic dependency inventory and candidate maintenance scan.",
+        "id": "E-DEPS",
+        "kind": "analysis",
+        "limitations": "Only 80% of direct coordinates reconciled; transitive review pending.",
+        "reviewedBy": "Analysis lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 23,
+            "path": "02-technical-analysis.md",
+            "sourceHash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verificationStatus": "reviewed"
+      },
+      "E-DEPS2": {
+        "capturedAt": "2026-11-09",
+        "createdAt": "2026-11-09",
+        "description": "Complete synthetic direct inventory with two interface smoke checks.",
+        "id": "E-DEPS2",
+        "kind": "analysis",
+        "limitations": "License exception unresolved; third wrapper experiment pending.",
+        "reviewedBy": "Analysis lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 15,
+            "path": "05-dependency-and-security-review.md",
+            "sourceHash": "fa36424386f9d6d082e9c380ab5db9f61feb31ca0c2d1ba499759061c32228d9",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-09",
+        "verificationStatus": "reviewed"
+      },
+      "E-MODEL": {
+        "capturedAt": "2026-11-02",
+        "createdAt": "2026-11-02",
+        "description": "Synthetic effort scenario model with explicitly incomplete benefits.",
+        "id": "E-MODEL",
+        "kind": "financial-model",
+        "limitations": "No calibrated productivity baseline, benefit horizon or operating-cost counterfactual.",
+        "reviewedBy": "Analysis lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 23,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verificationStatus": "reviewed"
+      },
+      "E-MODEL2": {
+        "capturedAt": "2026-11-09",
+        "createdAt": "2026-11-09",
+        "description": "Revised synthetic effort model incorporating session adapter work.",
+        "id": "E-MODEL2",
+        "kind": "financial-model",
+        "limitations": "Benefits, recovery and rollout remain uncalibrated; estimates are not commitments.",
+        "reviewedBy": "Analysis lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 15,
+            "path": "06-worthiness-reassessment.md",
+            "sourceHash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-09",
+        "verificationStatus": "reviewed"
+      },
+      "E-SCAN": {
+        "capturedAt": "2026-11-02",
+        "createdAt": "2026-11-02",
+        "description": "Synthetic static namespace/API inventory across six modules.",
+        "id": "E-SCAN",
+        "kind": "analysis",
+        "limitations": "Generated code, persistence metadata and runtime behavior excluded.",
+        "reviewedBy": "Analysis lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 23,
+            "path": "02-technical-analysis.md",
+            "sourceHash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-02",
+        "verificationStatus": "reviewed"
+      },
+      "E-SERIAL": {
+        "capturedAt": "2026-11-09",
+        "createdAt": "2026-11-09",
+        "description": "Synthetic legacy fixture experiment: 9/32 fail without adapter; 32/32 pass with adapter.",
+        "id": "E-SERIAL",
+        "kind": "experiment",
+        "limitations": "Synthetic fixture set; production diversity unmeasured.",
+        "reviewedBy": "Independent reviewer",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 23,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-09",
+        "verificationStatus": "validated"
+      },
+      "E-TX": {
+        "capturedAt": "2026-11-09",
+        "createdAt": "2026-11-09",
+        "description": "Synthetic transaction rollback experiment: 18/18 passed on a representative slice.",
+        "id": "E-TX",
+        "kind": "experiment",
+        "limitations": "Sampled cases only; distributed recovery excluded.",
+        "reviewedBy": "Independent reviewer",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 23,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 5
+          }
+        ],
+        "updatedAt": "2026-11-09",
+        "verificationStatus": "validated"
+      }
+    },
+    "executiveSummary": [
+      "The week changed our understanding: namespace-only session compatibility was contradicted; an explicit adapter is now evidenced on synthetic fixtures.",
+      "Representative transaction evidence strengthened, and dependency alternatives partially matured. Technical adaptation effort rises to 95–155 person-days.",
+      "Defer migration commitment: benefits remain unknown and operational recovery is insufficiently assessed. Next priorities are the economic counterfactual, recovery experiment and license position."
+    ],
+    "findings": {
+      "F-ADAPTER": {
+        "conclusion": "An explicit serialization version adapter is required; it passes all sampled fixtures.",
+        "confidence": "medium",
+        "createdAt": "2026-11-09",
+        "evidenceRefs": [
+          "E-SERIAL"
+        ],
+        "id": "F-ADAPTER",
+        "impact": "mixed",
+        "implications": "This informs feasibility and estimated research needs; it is not implementation completion.",
+        "investigationId": "I-SERIAL",
+        "nextInvestigation": "Expand fixture diversity before accepting broad compatibility.",
+        "revision": 1,
+        "severity": "critical",
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "corroborated",
+        "supersedes": [
+          "F-SERIAL"
+        ],
+        "title": "Explicit session adapter required",
+        "uncertainties": [
+          "Production fixture diversity unmeasured"
+        ],
+        "updatedAt": "2026-11-09"
+      },
+      "F-API": {
+        "conclusion": "The representative transaction slice passes all 18 rollback cases with the adapter layer.",
+        "confidence": "high",
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [
+          "E-TX"
+        ],
+        "id": "F-API",
+        "impact": "favorable",
+        "implications": "This informs feasibility and estimated research needs; it is not implementation completion.",
+        "investigationId": "I-API",
+        "nextInvestigation": "Test failure recovery under restart.",
+        "revision": 2,
+        "severity": "high",
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "validated",
+        "supersedes": [],
+        "title": "Representative API adaptation validated",
+        "uncertainties": [
+          "Distributed recovery excluded"
+        ],
+        "updatedAt": "2026-11-09"
+      },
+      "F-DEPS": {
+        "conclusion": "Two maintained replacement candidates pass smoke checks; one wrapper and license exception remain unresolved.",
+        "confidence": "medium",
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [
+          "E-DEPS",
+          "E-DEPS2"
+        ],
+        "id": "F-DEPS",
+        "impact": "mixed",
+        "implications": "This informs feasibility and estimated research needs; it is not implementation completion.",
+        "investigationId": "I-DEPS",
+        "nextInvestigation": "Resolve license and isolation questions.",
+        "revision": 2,
+        "severity": "high",
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "05-dependency-and-security-review.md",
+            "sourceHash": "fa36424386f9d6d082e9c380ab5db9f61feb31ca0c2d1ba499759061c32228d9",
+            "startLine": 1
+          }
+        ],
+        "status": "corroborated",
+        "supersedes": [],
+        "title": "Dependency path partially corroborated",
+        "uncertainties": [
+          "License exception not approved",
+          "Third wrapper untested"
+        ],
+        "updatedAt": "2026-11-09"
+      },
+      "F-SERIAL": {
+        "conclusion": "Nine of 32 synthetic legacy fixtures fail without an explicit serialization adapter. The prior assumption is contradicted.",
+        "confidence": "low",
+        "createdAt": "2026-11-02",
+        "evidenceRefs": [
+          "E-SERIAL"
+        ],
+        "id": "F-SERIAL",
+        "impact": "adverse",
+        "implications": "This informs feasibility and estimated research needs; it is not implementation completion.",
+        "investigationId": "I-SERIAL",
+        "nextInvestigation": "Use F-ADAPTER for subsequent evaluation.",
+        "revision": 2,
+        "severity": "critical",
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "contradicted",
+        "supersedes": [],
+        "title": "Namespace-only session hypothesis contradicted",
+        "uncertainties": [
+          "Legacy session diversity unknown"
+        ],
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "gates": {
+      "G-COMPAT": {
+        "createdAt": "2026-11-02",
+        "critical": true,
+        "evidenceRefs": [
+          "E-TX",
+          "E-SERIAL"
+        ],
+        "id": "G-COMPAT",
+        "rationale": "Sampled API and serialization behavior is evidenced; this gate is limited to representative evidence.",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "met",
+        "title": "Representative compatibility evidence",
+        "updatedAt": "2026-11-09"
+      },
+      "G-DEPS": {
+        "createdAt": "2026-11-02",
+        "critical": false,
+        "evidenceRefs": [
+          "E-DEPS2"
+        ],
+        "id": "G-DEPS",
+        "rationale": "A representative maintained replacement path is documented; complete legal clearance is tracked separately.",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "05-dependency-and-security-review.md",
+            "sourceHash": "fa36424386f9d6d082e9c380ab5db9f61feb31ca0c2d1ba499759061c32228d9",
+            "startLine": 1
+          }
+        ],
+        "status": "met",
+        "title": "Maintained dependency path demonstrated",
+        "updatedAt": "2026-11-09"
+      },
+      "G-ECON": {
+        "createdAt": "2026-11-02",
+        "critical": true,
+        "evidenceRefs": [
+          "E-MODEL"
+        ],
+        "id": "G-ECON",
+        "rationale": "Benefit model and counterfactual missing.",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "03-economics-and-decisions.md",
+            "sourceHash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9",
+            "startLine": 1
+          }
+        ],
+        "status": "unknown",
+        "title": "Defensible worthiness model",
+        "updatedAt": "2026-11-02"
+      },
+      "G-OPS": {
+        "createdAt": "2026-11-02",
+        "critical": true,
+        "evidenceRefs": [],
+        "id": "G-OPS",
+        "rationale": "Investigation started, but no restore/replay evidence is available.",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "06-worthiness-reassessment.md",
+            "sourceHash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0",
+            "startLine": 1
+          }
+        ],
+        "status": "unmet",
+        "title": "Operational recovery assessment",
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "investigations": {
+      "I-API": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-COMPAT",
+        "id": "I-API",
+        "nextStep": "Validate a representative transaction slice.",
+        "owner": "Research team",
+        "question": "Are API and namespace adaptations bounded?",
+        "revision": 2,
+        "scopeWeight": 2,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "validated",
+        "updatedAt": "2026-11-09"
+      },
+      "I-AUTH": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-SEC",
+        "id": "I-AUTH",
+        "nextStep": "Exercise denied and cross-tenant requests.",
+        "owner": "Research team",
+        "question": "Are authorization semantics equivalent?",
+        "revision": 2,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "preliminary",
+        "updatedAt": "2026-11-09"
+      },
+      "I-CAPACITY": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-PLATFORM",
+        "id": "I-CAPACITY",
+        "nextStep": "Design a replay dataset without customer data.",
+        "owner": "Research team",
+        "question": "Is performance acceptable at peak load?",
+        "revision": 1,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "status": "not-examined",
+        "updatedAt": "2026-11-02"
+      },
+      "I-DEPS": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-DEPS",
+        "id": "I-DEPS",
+        "nextStep": "Reconcile the full transitive inventory.",
+        "owner": "Research team",
+        "question": "Do maintained replacement libraries exist?",
+        "revision": 2,
+        "scopeWeight": 2,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "corroborated",
+        "updatedAt": "2026-11-09"
+      },
+      "I-EFFORT": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-ECON",
+        "id": "I-EFFORT",
+        "nextStep": "Model remediation sensitivity.",
+        "owner": "Research team",
+        "question": "What effort range is defensible?",
+        "revision": 1,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 18,
+            "path": "01-assessment-charter.md",
+            "sourceHash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7",
+            "startLine": 1
+          }
+        ],
+        "status": "preliminary",
+        "updatedAt": "2026-11-02"
+      },
+      "I-LICENSE": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-DEPS",
+        "id": "I-LICENSE",
+        "nextStep": "Request legal review of candidate licenses.",
+        "owner": "Research team",
+        "question": "Are replacement licenses acceptable?",
+        "revision": 2,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "preliminary",
+        "updatedAt": "2026-11-09"
+      },
+      "I-RECOVERY": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-OPS",
+        "id": "I-RECOVERY",
+        "nextStep": "Interview operations and test restore assumptions.",
+        "owner": "Research team",
+        "question": "Can operations sustain the candidate platform?",
+        "revision": 2,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "investigating",
+        "updatedAt": "2026-11-09"
+      },
+      "I-ROI": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-ECON",
+        "id": "I-ROI",
+        "nextStep": "Validate the counterfactual and benefit horizon.",
+        "owner": "Research team",
+        "question": "Are benefits and avoided costs worth the effort?",
+        "revision": 2,
+        "scopeWeight": 2,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "investigating",
+        "updatedAt": "2026-11-09"
+      },
+      "I-RUNTIME": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-PLATFORM",
+        "id": "I-RUNTIME",
+        "nextStep": "Run a transaction and recovery experiment.",
+        "owner": "Research team",
+        "question": "Does the target runtime host representative workloads?",
+        "revision": 2,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "preliminary",
+        "updatedAt": "2026-11-09"
+      },
+      "I-SERIAL": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-COMPAT",
+        "id": "I-SERIAL",
+        "nextStep": "Capture legacy session fixtures.",
+        "owner": "Research team",
+        "question": "Can stored serialized sessions be read?",
+        "revision": 2,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "corroborated",
+        "updatedAt": "2026-11-09"
+      },
+      "I-SUPPORT": {
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-SEC",
+        "id": "I-SUPPORT",
+        "nextStep": "Obtain written support assumptions.",
+        "owner": "Research team",
+        "question": "Is the support lifecycle adequate?",
+        "revision": 2,
+        "scopeWeight": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "inconclusive",
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "program": {
+      "currentRecommendationId": "REC-ATLAS",
+      "exampleData": true,
+      "id": "ATLAS",
+      "owner": "Architecture & Technology Strategy",
+      "scope": "Evaluate whether a legacy Java estate should be modernized. No implementation progress is represented.",
+      "subtitle": "Feasibility, effort & migration worthiness",
+      "title": "Atlas modernization assessment"
+    },
+    "questions": {
+      "Q-LEGAL": {
+        "blocking": true,
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-DEPS",
+        "evidenceRefs": [
+          "E-DEPS"
+        ],
+        "id": "Q-LEGAL",
+        "nextStep": "Request a documented license position.",
+        "owner": "Legal liaison",
+        "question": "Are candidate replacement licenses acceptable?",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "02-technical-analysis.md",
+            "sourceHash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193",
+            "startLine": 1
+          }
+        ],
+        "status": "open",
+        "updatedAt": "2026-11-02"
+      },
+      "Q-ROI": {
+        "blocking": true,
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-ECON",
+        "evidenceRefs": [],
+        "id": "Q-ROI",
+        "nextStep": "Validate avoided-cost assumptions.",
+        "owner": "Finance partner",
+        "question": "What counterfactual cost and benefit horizon should management use?",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "02-technical-analysis.md",
+            "sourceHash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193",
+            "startLine": 1
+          }
+        ],
+        "status": "open",
+        "updatedAt": "2026-11-02"
+      },
+      "Q-SERIAL": {
+        "blocking": true,
+        "createdAt": "2026-11-02",
+        "dimensionId": "D-COMPAT",
+        "evidenceRefs": [
+          "E-SERIAL"
+        ],
+        "id": "Q-SERIAL",
+        "nextStep": "Expand production-representative fixture diversity.",
+        "owner": "Runtime research lead",
+        "question": "Will legacy session fixtures deserialize safely?",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "answered",
+        "updatedAt": "2026-11-09"
+      },
+      "Q-SUPPORT": {
+        "blocking": true,
+        "createdAt": "2026-11-09",
+        "dimensionId": "D-SEC",
+        "evidenceRefs": [
+          "E-DEPS2"
+        ],
+        "id": "Q-SUPPORT",
+        "nextStep": "Obtain written terms and an approved deny-policy oracle.",
+        "owner": "Security & procurement",
+        "question": "Which support terms and security policy oracle are authoritative?",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "05-dependency-and-security-review.md",
+            "sourceHash": "fa36424386f9d6d082e9c380ab5db9f61feb31ca0c2d1ba499759061c32228d9",
+            "startLine": 1
+          }
+        ],
+        "status": "open",
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "recommendations": {
+      "REC-ATLAS": {
+        "conclusion": "Defer migration commitment; continue focused assessment.",
+        "createdAt": "2026-11-02",
+        "decisionStatus": "recommended",
+        "id": "REC-ATLAS",
+        "limitations": [
+          "Unknown benefits",
+          "No recovery evidence",
+          "License exception unresolved"
+        ],
+        "rationale": "Technical feasibility is increasingly evidenced, but worthiness is not established without the economic counterfactual and recovery assessment.",
+        "revision": 2,
+        "sourceRefs": [
+          {
+            "endLine": 16,
+            "path": "06-worthiness-reassessment.md",
+            "sourceHash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0",
+            "startLine": 1
+          }
+        ],
+        "stance": "defer",
+        "supportingFindings": [
+          "F-API",
+          "F-ADAPTER",
+          "F-DEPS"
+        ],
+        "updatedAt": "2026-11-09"
+      }
+    },
+    "risks": {
+      "R-SESSION": {
+        "createdAt": "2026-11-09",
+        "description": "Stored session incompatibility raises adaptation effort and backward-compatibility uncertainty.",
+        "evidenceRefs": [
+          "E-SERIAL"
+        ],
+        "id": "R-SESSION",
+        "impact": "critical",
+        "likelihood": "high",
+        "mitigationOptions": [
+          "Explicit version adapters",
+          "Investigate session invalidation trade-offs"
+        ],
+        "owner": "Runtime research lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "04-runtime-validation.md",
+            "sourceHash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3",
+            "startLine": 1
+          }
+        ],
+        "status": "open",
+        "updatedAt": "2026-11-09"
+      },
+      "R-WRAPPERS": {
+        "createdAt": "2026-11-02",
+        "description": "Unmaintained wrappers may require custom replacement and increase effort.",
+        "evidenceRefs": [
+          "E-DEPS"
+        ],
+        "id": "R-WRAPPERS",
+        "impact": "high",
+        "likelihood": "medium",
+        "mitigationOptions": [
+          "Evaluate maintained alternatives",
+          "Isolate through an adapter boundary"
+        ],
+        "owner": "Integration research lead",
+        "revision": 1,
+        "sourceRefs": [
+          {
+            "endLine": 24,
+            "path": "02-technical-analysis.md",
+            "sourceHash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193",
+            "startLine": 1
+          }
+        ],
+        "status": "open",
+        "updatedAt": "2026-11-02"
+      }
+    },
+    "schemaVersion": "1.0",
+    "sources": {
+      "01-assessment-charter.md": {
+        "content": "# Assessment charter • baseline, 2 November 2026\n\n> SYNTHETIC CASE STUDY — not vendor guidance or production measurements.\n\n## Decision context\nAtlas is a fictional 28-module Java estate. The assessment compares retaining the present stack, staged modernization, and a replacement. The target is an illustrative Spring 7 / current-generation application-server candidate; this document asserts no real support matrix.\n\n## Scope and measurement contract\nThe six dimensions have business-defined weights totalling 100. An investigation counts as examined only after a documented preliminary result (or an inconclusive outcome), never merely because an agent started it. Planned scope weights are explicit. Coverage is not confidence or feasibility.\n\n## Assumptions and exclusions\n- No code has been migrated as a deliverable of this study.\n- Sample counts, timings, costs and findings below are fabricated to test the module.\n- Benefits, enterprise licensing, and restore readiness still lack defensible measurements.\n\n## Review protocol\nWeekly reports contain the complete current understanding plus structured deltas. An authorized human approves each snapshot; a favorable technical observation alone cannot authorize migration.\n\n```assessment\nprogram:\n  id: ATLAS\n  title: Atlas modernization assessment\n  subtitle: Feasibility, effort & migration worthiness\n  owner: Architecture & Technology Strategy\n  scope: Evaluate whether a legacy Java estate should be modernized. No implementation\n    progress is represented.\n  exampleData: true\n  currentRecommendationId: REC-ATLAS\nexecutiveSummary:\n- The compatibility investigation has identified a plausible adaptation route, but\n  no migration decision is justified yet.\n- Dependency and security findings remain preliminary. Economics and operational recovery\n  are materially underexamined.\n- Management should fund targeted validation experiments rather than approve implementation\n  on current evidence.\ndimensions:\n- id: D-COMPAT\n  title: Framework compatibility\n  description: Planned assessment dimension for the Atlas modernization study.\n  scope: API, namespace, serialization and transaction semantics\n  weight: 25\n  coverageStatus: investigating\n  evidenceMaturity: low\n- id: D-DEPS\n  title: Dependency viability\n  description: Planned assessment dimension for the Atlas modernization study.\n  scope: Direct and transitive dependency maintenance and licensing\n  weight: 20\n  coverageStatus: investigating\n  evidenceMaturity: low\n- id: D-PLATFORM\n  title: Runtime & platform\n  description: Planned assessment dimension for the Atlas modernization study.\n  scope: Representative application-server, JDK and operational fit\n  weight: 15\n  coverageStatus: investigating\n  evidenceMaturity: low\n- id: D-SEC\n  title: Security & compliance\n  description: Planned assessment dimension for the Atlas modernization study.\n  scope: Security controls, support lifecycle and access boundaries\n  weight: 15\n  coverageStatus: investigating\n  evidenceMaturity: low\n- id: D-ECON\n  title: Effort & worthiness\n  description: Planned assessment dimension for the Atlas modernization study.\n  scope: Uncertainty-bounded effort, costs, benefits and alternatives\n  weight: 20\n  coverageStatus: investigating\n  evidenceMaturity: low\n- id: D-OPS\n  title: Operational impact\n  description: Planned assessment dimension for the Atlas modernization study.\n  scope: Recovery, observability, on-call and data-handling readiness\n  weight: 5\n  coverageStatus: not-examined\n  evidenceMaturity: unknown\ninvestigations:\n- id: I-API\n  dimensionId: D-COMPAT\n  question: Are API and namespace adaptations bounded?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 2\n  nextStep: Validate a representative transaction slice.\n- id: I-SERIAL\n  dimensionId: D-COMPAT\n  question: Can stored serialized sessions be read?\n  status: not-examined\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Capture legacy session fixtures.\n- id: I-DEPS\n  dimensionId: D-DEPS\n  question: Do maintained replacement libraries exist?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 2\n  nextStep: Reconcile the full transitive inventory.\n- id: I-LICENSE\n  dimensionId: D-DEPS\n  question: Are replacement licenses acceptable?\n  status: investigating\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Request legal review of candidate licenses.\n- id: I-RUNTIME\n  dimensionId: D-PLATFORM\n  question: Does the target runtime host representative workloads?\n  status: investigating\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Run a transaction and recovery experiment.\n- id: I-CAPACITY\n  dimensionId: D-PLATFORM\n  question: Is performance acceptable at peak load?\n  status: not-examined\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Design a replay dataset without customer data.\n- id: I-AUTH\n  dimensionId: D-SEC\n  question: Are authorization semantics equivalent?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Exercise denied and cross-tenant requests.\n- id: I-SUPPORT\n  dimensionId: D-SEC\n  question: Is the support lifecycle adequate?\n  status: not-examined\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Obtain written support assumptions.\n- id: I-EFFORT\n  dimensionId: D-ECON\n  question: What effort range is defensible?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Model remediation sensitivity.\n- id: I-ROI\n  dimensionId: D-ECON\n  question: Are benefits and avoided costs worth the effort?\n  status: not-examined\n  owner: Research team\n  scopeWeight: 2\n  nextStep: Validate the counterfactual and benefit horizon.\n- id: I-RECOVERY\n  dimensionId: D-OPS\n  question: Can operations sustain the candidate platform?\n  status: not-examined\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Interview operations and test restore assumptions.\nrecommendations:\n- id: REC-ATLAS\n  conclusion: Recommendation pending; continue targeted assessment.\n  rationale: Compatibility evidence is promising but economics and recovery remain\n    unexplored.\n  supportingFindings:\n  - F-API\n  - F-DEPS\n  limitations:\n  - Sampled modules only\n  - No validated benefit model\n  decisionStatus: pending\n  stance: pending\n```\n",
+        "hash": "fa3163929480aa01a20f4d89e78f22636dd136f3901f021d5be2634f117b7ba7"
+      },
+      "02-technical-analysis.md": {
+        "content": "# Technical analysis • inventory and provisional hypotheses\n\n> SYNTHETIC CASE STUDY — not vendor guidance or production measurements.\n\n## Inventory and method\nA synthetic inventory enumerates 28 modules, 187 direct dependencies and 412 transitive nodes. Six representative modules were statically inspected; no assertion of full-estate coverage is made.\n\n| Probe | Sample | Observation | Limitation |\n| --- | ---: | --- | --- |\n| Namespace and API scan | 6 modules | 146 namespace sites, 19 removed API calls | Generated source excluded |\n| Dependency reconciliation | 80% of direct coordinates | 12 replacement candidates, 3 unmaintained wrappers | Transitive licensing incomplete |\n| Security policy walkthrough | 14 role paths | 2 ambiguous deny rules | No runtime validation |\n\n## Preliminary interpretation\nThe initial scan suggests the API work may be bounded. A deliberately fragile hypothesis claims namespace adaptation will preserve session serialization; it has not been tested and must not be read as established compatibility.\n\n## Research priorities\n1. Deserialize representative old sessions on the candidate runtime.\n2. Test transaction rollback across database and queue boundaries.\n3. Review generated authorization code, including negative cases.\n\n## Embedded hostile text for safe rendering\nThe literal text `<script>window.__sourceExecuted = true</script>` is research content, never executable UI. Names may contain `A & B <adapter>` and Unicode such as Δ or ₹.\n\n```assessment\nevidence:\n- id: E-SCAN\n  description: Synthetic static namespace/API inventory across six modules.\n  kind: analysis\n  verificationStatus: reviewed\n  capturedAt: '2026-11-02'\n  reviewedBy: Analysis lead\n  limitations: Generated code, persistence metadata and runtime behavior excluded.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 23\n- id: E-DEPS\n  description: Synthetic dependency inventory and candidate maintenance scan.\n  kind: analysis\n  verificationStatus: reviewed\n  capturedAt: '2026-11-02'\n  reviewedBy: Analysis lead\n  limitations: Only 80% of direct coordinates reconciled; transitive review pending.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 23\n- id: E-ASSUME\n  description: Assumed serialization equivalence after namespace adaptation.\n  kind: assumption\n  verificationStatus: unverified\n  capturedAt: '2026-11-02'\n  reviewedBy: unreviewed\n  limitations: No fixture-based test exists.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 23\nfindings:\n- id: F-API\n  investigationId: I-API\n  title: API adaptation appears bounded\n  conclusion: The sampled API surface suggests a manageable adapter layer; estate-wide\n    extrapolation is premature.\n  status: preliminary\n  confidence: medium\n  evidenceRefs:\n  - E-SCAN\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - Generated code not scanned\n  nextInvestigation: Validate transaction slices.\n  severity: high\n  impact: favorable\n  supersedes: []\n- id: F-SERIAL\n  investigationId: I-SERIAL\n  title: Session compatibility hypothesis\n  conclusion: Namespace-only adaptation is assumed to preserve serialized session\n    behavior.\n  status: preliminary\n  confidence: high\n  evidenceRefs:\n  - E-ASSUME\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - No deserialization evidence\n  nextInvestigation: Test old session fixtures.\n  severity: critical\n  impact: favorable\n  supersedes: []\n- id: F-DEPS\n  investigationId: I-DEPS\n  title: Unmaintained integration wrappers\n  conclusion: Three candidate wrappers lack a demonstrated maintenance path.\n  status: preliminary\n  confidence: low\n  evidenceRefs:\n  - E-DEPS\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - Replacement license costs unknown\n  nextInvestigation: Investigate maintained replacements.\n  severity: high\n  impact: adverse\n  supersedes: []\nrisks:\n- id: R-WRAPPERS\n  description: Unmaintained wrappers may require custom replacement and increase effort.\n  likelihood: medium\n  impact: high\n  evidenceRefs:\n  - E-DEPS\n  mitigationOptions:\n  - Evaluate maintained alternatives\n  - Isolate through an adapter boundary\n  status: open\n  owner: Integration research lead\nquestions:\n- id: Q-SERIAL\n  dimensionId: D-COMPAT\n  question: Will legacy session fixtures deserialize safely?\n  status: open\n  owner: Runtime research lead\n  nextStep: Run a negative and positive fixture matrix.\n  blocking: true\n  evidenceRefs:\n  - E-ASSUME\n- id: Q-LEGAL\n  dimensionId: D-DEPS\n  question: Are candidate replacement licenses acceptable?\n  status: open\n  owner: Legal liaison\n  nextStep: Request a documented license position.\n  blocking: true\n  evidenceRefs:\n  - E-DEPS\n- id: Q-ROI\n  dimensionId: D-ECON\n  question: What counterfactual cost and benefit horizon should management use?\n  status: open\n  owner: Finance partner\n  nextStep: Validate avoided-cost assumptions.\n  blocking: true\n  evidenceRefs: []\n```\n",
+        "hash": "90f89252abc6b201fdf5cb158bdd4d6d1b1b94744af1303238b5a68ea199b193"
+      },
+      "03-economics-and-decisions.md": {
+        "content": "# Economic analysis • alternatives, ranges and decision gates\n\n> SYNTHETIC CASE STUDY — not vendor guidance or production measurements.\n\n## Estimation method\nThe sample estimate is an order-of-magnitude research output, not a delivery commitment. A low scenario assumes two reusable adapters; a high scenario assumes replacing three wrappers and retesting transaction behavior.\n\n| Item | Low | High | Unit | Confidence |\n| --- | ---: | ---: | --- | --- |\n| Technical adaptation effort | 60 | 100 | person-days | Low |\n| One-time external cost | 35000 | 65000 | USD | Low |\n| Recurring benefit | Unknown | Unknown | USD/year | Unknown |\n\n## Worthiness and sensitivity\nNo ROI is calculated: the benefit baseline and evaluation horizon are missing. Person-days are not added to dollars. The effort range excludes license renegotiation, enterprise rollout, parallel-run costs and contingency for operational recovery.\n\n## Alternatives\nRetain: avoids near-term change but leaves support exposure unquantified.\nStaged modernization: offers a bounded experiment, with integration uncertainty.\nReplace: might simplify the estate, but business-function parity is unassessed.\n\n## Management ask\nApprove two further assessment experiments and a finance workshop. Do not treat research funding as implementation authorization.\n\n```assessment\nevidence:\n- id: E-MODEL\n  description: Synthetic effort scenario model with explicitly incomplete benefits.\n  kind: financial-model\n  verificationStatus: reviewed\n  capturedAt: '2026-11-02'\n  reviewedBy: Analysis lead\n  limitations: No calibrated productivity baseline, benefit horizon or operating-cost\n    counterfactual.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 23\nestimates:\n- id: EST-EFFORT\n  title: Technical adaptation effort\n  category: effort\n  low: 60\n  high: 100\n  unit: person-days\n  confidence: low\n  assumptions:\n  - Two reusable adapters in the low case\n  - Three wrapper replacements in the high case\n  - Excludes rollout and recovery\n  evidenceRefs:\n  - E-MODEL\n- id: EST-COST\n  title: One-time external assessment of transition costs\n  category: cost\n  low: 35000\n  high: 65000\n  unit: USD\n  confidence: low\n  assumptions:\n  - Synthetic quotes\n  - Licensing renegotiation excluded\n  evidenceRefs:\n  - E-MODEL\n- id: EST-BENEFIT\n  title: Recurring economic benefit\n  category: benefit\n  low: null\n  high: null\n  unit: USD/year\n  confidence: unknown\n  assumptions:\n  - Benefit horizon and counterfactual not yet agreed\n  evidenceRefs: []\nalternatives:\n- id: ALT-RETAIN\n  description: Retain the current platform\n  benefits:\n  - No immediate conversion expenditure\n  drawbacks:\n  - Unquantified support and opportunity costs\n  effortEstimate: Unknown; support stabilization not estimated\n  assumptions:\n  - Current support remains purchasable\n  evidenceRefs:\n  - E-MODEL\n  verdict: viable\n- id: ALT-STAGED\n  description: Assess a staged modernization\n  benefits:\n  - Limits exposure while testing critical hypotheses\n  drawbacks:\n  - Parallel-platform overhead remains unknown\n  effortEstimate: See EST-EFFORT; not a delivery commitment\n  assumptions:\n  - Representative slices predict key compatibility risks\n  evidenceRefs:\n  - E-SCAN\n  - E-MODEL\n  verdict: preferred\n- id: ALT-REPLACE\n  description: Replace with a new service implementation\n  benefits:\n  - Potential simplification\n  drawbacks:\n  - Functional parity and data migration unassessed\n  effortEstimate: Not yet measurable\n  assumptions:\n  - Business processes can be re-specified\n  evidenceRefs: []\n  verdict: unassessed\ngates:\n- id: G-COMPAT\n  title: Representative compatibility evidence\n  status: unmet\n  critical: true\n  rationale: Runtime and serialization experiments missing.\n  evidenceRefs:\n  - E-SCAN\n- id: G-DEPS\n  title: Maintained dependency path demonstrated\n  status: unknown\n  critical: false\n  rationale: Candidate replacements not yet tested.\n  evidenceRefs:\n  - E-DEPS\n- id: G-ECON\n  title: Defensible worthiness model\n  status: unknown\n  critical: true\n  rationale: Benefit model and counterfactual missing.\n  evidenceRefs:\n  - E-MODEL\n- id: G-OPS\n  title: Operational recovery assessment\n  status: unknown\n  critical: true\n  rationale: No recovery investigation completed.\n  evidenceRefs: []\ndecisions:\n- id: DEC-EXPERIMENT\n  title: Authorize two assessment experiments\n  status: proposed\n  owner: Architecture sponsor\n  dueOn: '2026-11-06'\n  rationale: Resolve the most material compatibility uncertainties before a migration\n    decision.\n  evidenceRefs:\n  - E-SCAN\nactivities:\n- id: ACT-RESEARCH\n  title: Serialization and transaction research experiments\n  status: planned\n  owner: Research agents + reviewer\n  nextStep: Use synthetic fixtures and preserve raw observations.\n  evidenceRefs:\n  - E-ASSUME\n```\n",
+        "hash": "d4ebea1d341c46b82d7406d7ca3b7ac0ca0d71a13ab79f0f1e5daf4fafcf92e9"
+      },
+      "04-runtime-validation.md": {
+        "content": "# Week 2 • runtime experiments change the conclusion\n\n> SYNTHETIC CASE STUDY — not vendor guidance or production measurements.\n\n## Reproducible experimental design\nSynthetic run ID LAB-ATLAS-2026-11-09-A used 32 session fixtures and 18 transaction cases on an isolated candidate stack. The control used the legacy serialization descriptors. Results were reviewed by a second analyst; all numbers are fictional test inputs.\n\n| Experiment | Passed | Failed | Consequence |\n| --- | ---: | ---: | --- |\n| Legacy session deserialization without adapter | 23 | 9 | Namespace-only hypothesis contradicted |\n| Session deserialization with explicit version adapter | 32 | 0 | Candidate mitigation demonstrated on sample |\n| Representative transaction rollback | 18 | 0 | Bounded transaction path validated |\n\n## Revised interpretation\nThe prior F-SERIAL conclusion is contradicted by nine failing fixtures. It remains in the record and in the earlier snapshot. New finding F-ADAPTER supersedes it for planning: explicit serialization version adaptation is necessary. Passing sampled fixtures does not establish full production behavior.\n\n## Residual uncertainties\n- Distributed recovery and restart behavior are still outside this experiment.\n- Capacity and long-lived session diversity are unassessed.\n- A namespace scan cannot demonstrate semantic equivalence.\n\n## Next research\nPrioritize a restore-and-replay experiment, including partial transaction failure and aged session fixtures.\n\n```assessment\ninvestigations:\n- id: I-API\n  dimensionId: D-COMPAT\n  question: Are API and namespace adaptations bounded?\n  status: validated\n  owner: Research team\n  scopeWeight: 2\n  nextStep: Validate a representative transaction slice.\n- id: I-SERIAL\n  dimensionId: D-COMPAT\n  question: Can stored serialized sessions be read?\n  status: corroborated\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Capture legacy session fixtures.\n- id: I-DEPS\n  dimensionId: D-DEPS\n  question: Do maintained replacement libraries exist?\n  status: corroborated\n  owner: Research team\n  scopeWeight: 2\n  nextStep: Reconcile the full transitive inventory.\n- id: I-LICENSE\n  dimensionId: D-DEPS\n  question: Are replacement licenses acceptable?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Request legal review of candidate licenses.\n- id: I-RUNTIME\n  dimensionId: D-PLATFORM\n  question: Does the target runtime host representative workloads?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Run a transaction and recovery experiment.\n- id: I-AUTH\n  dimensionId: D-SEC\n  question: Are authorization semantics equivalent?\n  status: preliminary\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Exercise denied and cross-tenant requests.\n- id: I-SUPPORT\n  dimensionId: D-SEC\n  question: Is the support lifecycle adequate?\n  status: inconclusive\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Obtain written support assumptions.\n- id: I-ROI\n  dimensionId: D-ECON\n  question: Are benefits and avoided costs worth the effort?\n  status: investigating\n  owner: Research team\n  scopeWeight: 2\n  nextStep: Validate the counterfactual and benefit horizon.\n- id: I-RECOVERY\n  dimensionId: D-OPS\n  question: Can operations sustain the candidate platform?\n  status: investigating\n  owner: Research team\n  scopeWeight: 1\n  nextStep: Interview operations and test restore assumptions.\nevidence:\n- id: E-TX\n  description: 'Synthetic transaction rollback experiment: 18/18 passed on a representative\n    slice.'\n  kind: experiment\n  verificationStatus: validated\n  capturedAt: '2026-11-09'\n  reviewedBy: Independent reviewer\n  limitations: Sampled cases only; distributed recovery excluded.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 23\n- id: E-SERIAL\n  description: 'Synthetic legacy fixture experiment: 9/32 fail without adapter; 32/32\n    pass with adapter.'\n  kind: experiment\n  verificationStatus: validated\n  capturedAt: '2026-11-09'\n  reviewedBy: Independent reviewer\n  limitations: Synthetic fixture set; production diversity unmeasured.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 23\nfindings:\n- id: F-API\n  investigationId: I-API\n  title: Representative API adaptation validated\n  conclusion: The representative transaction slice passes all 18 rollback cases with\n    the adapter layer.\n  status: validated\n  confidence: high\n  evidenceRefs:\n  - E-TX\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - Distributed recovery excluded\n  nextInvestigation: Test failure recovery under restart.\n  severity: high\n  impact: favorable\n  supersedes: []\n- id: F-SERIAL\n  investigationId: I-SERIAL\n  title: Namespace-only session hypothesis contradicted\n  conclusion: Nine of 32 synthetic legacy fixtures fail without an explicit serialization\n    adapter. The prior assumption is contradicted.\n  status: contradicted\n  confidence: low\n  evidenceRefs:\n  - E-SERIAL\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - Legacy session diversity unknown\n  nextInvestigation: Use F-ADAPTER for subsequent evaluation.\n  severity: critical\n  impact: adverse\n  supersedes: []\n- id: F-ADAPTER\n  investigationId: I-SERIAL\n  title: Explicit session adapter required\n  conclusion: An explicit serialization version adapter is required; it passes all\n    sampled fixtures.\n  status: corroborated\n  confidence: medium\n  evidenceRefs:\n  - E-SERIAL\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - Production fixture diversity unmeasured\n  nextInvestigation: Expand fixture diversity before accepting broad compatibility.\n  severity: critical\n  impact: mixed\n  supersedes:\n  - F-SERIAL\nquestions:\n- id: Q-SERIAL\n  dimensionId: D-COMPAT\n  question: Will legacy session fixtures deserialize safely?\n  status: answered\n  owner: Runtime research lead\n  nextStep: Expand production-representative fixture diversity.\n  blocking: true\n  evidenceRefs:\n  - E-SERIAL\nrisks:\n- id: R-SESSION\n  description: Stored session incompatibility raises adaptation effort and backward-compatibility\n    uncertainty.\n  likelihood: high\n  impact: critical\n  evidenceRefs:\n  - E-SERIAL\n  mitigationOptions:\n  - Explicit version adapters\n  - Investigate session invalidation trade-offs\n  status: open\n  owner: Runtime research lead\ngates:\n- id: G-COMPAT\n  title: Representative compatibility evidence\n  status: met\n  critical: true\n  rationale: Sampled API and serialization behavior is evidenced; this gate is limited\n    to representative evidence.\n  evidenceRefs:\n  - E-TX\n  - E-SERIAL\nactivities:\n- id: ACT-RESEARCH\n  title: Serialization and transaction research experiments\n  status: completed\n  owner: Research agents + reviewer\n  nextStep: Investigate operational recovery and broaden fixtures.\n  evidenceRefs:\n  - E-TX\n  - E-SERIAL\n```\n",
+        "hash": "4836c587a0824ecc17a347f223e3f609fc084dcc121f138f2d97a03c3f6e9ee3"
+      },
+      "05-dependency-and-security-review.md": {
+        "content": "# Week 2 • dependencies, licensing and security unknowns\n\n> SYNTHETIC CASE STUDY — not vendor guidance or production measurements.\n\n## Dependency reconciliation\nThe fictional inventory now reconciles all 187 direct dependencies. Two maintained replacement candidates pass interface smoke checks; one wrapper still needs an isolation experiment. A license exception has been requested but not approved.\n\n## Security investigation\nA negative-case walkthrough exposes two ambiguous authorization paths. Without an approved policy oracle these results are inconclusive. The support-policy investigation could not reconcile conflicting draft vendor terms, so it is explicitly inconclusive rather than favorable evidence.\n\n## Cross-agent interpretation\nThe inventory agent and security agent worked on separate records. Review retained original evidence IDs and added new evidence rather than relabeling old assumptions as validated.\n\n## Open research\nObtain authoritative license and support terms. Validate denied, cross-tenant and delegated-access cases. Test the third wrapper in isolation.\n\n```assessment\nevidence:\n- id: E-DEPS2\n  description: Complete synthetic direct inventory with two interface smoke checks.\n  kind: analysis\n  verificationStatus: reviewed\n  capturedAt: '2026-11-09'\n  reviewedBy: Analysis lead\n  limitations: License exception unresolved; third wrapper experiment pending.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 15\nfindings:\n- id: F-DEPS\n  investigationId: I-DEPS\n  title: Dependency path partially corroborated\n  conclusion: Two maintained replacement candidates pass smoke checks; one wrapper\n    and license exception remain unresolved.\n  status: corroborated\n  confidence: medium\n  evidenceRefs:\n  - E-DEPS\n  - E-DEPS2\n  implications: This informs feasibility and estimated research needs; it is not implementation\n    completion.\n  uncertainties:\n  - License exception not approved\n  - Third wrapper untested\n  nextInvestigation: Resolve license and isolation questions.\n  severity: high\n  impact: mixed\n  supersedes: []\ngates:\n- id: G-DEPS\n  title: Maintained dependency path demonstrated\n  status: met\n  critical: false\n  rationale: A representative maintained replacement path is documented; complete\n    legal clearance is tracked separately.\n  evidenceRefs:\n  - E-DEPS2\nquestions:\n- id: Q-SUPPORT\n  dimensionId: D-SEC\n  question: Which support terms and security policy oracle are authoritative?\n  status: open\n  owner: Security & procurement\n  nextStep: Obtain written terms and an approved deny-policy oracle.\n  blocking: true\n  evidenceRefs:\n  - E-DEPS2\n```\n",
+        "hash": "fa36424386f9d6d082e9c380ab5db9f61feb31ca0c2d1ba499759061c32228d9"
+      },
+      "06-worthiness-reassessment.md": {
+        "content": "# Week 2 • revised effort and pending business case\n\n> SYNTHETIC CASE STUDY — not vendor guidance or production measurements.\n\n## Revised effort model\nThe session adapter introduces an additional effort driver. The synthetic technical adaptation range increases from 60–100 to 95–155 person-days. This is a model revision, not implementation slippage. The external-cost range stays unchanged because procurement has supplied no updated quote.\n\n## What remains unknown\nFinance cannot yet validate an avoided-support-cost counterfactual or benefit horizon. Recurring benefits remain unknown. A high research-coverage score would not close this gap.\n\n## Current worthiness view\nDefer the migration commitment while authorizing the next assessment slice. The staged option remains the leading research candidate, not an approved migration plan. Recovery assessment and a defensible economic model are mandatory decision gates.\n\n## Next management conversation\nAgree the counterfactual, sponsor the recovery experiment, and obtain a license position. Research funding is approved; migration implementation is not.\n\n```assessment\nexecutiveSummary:\n- 'The week changed our understanding: namespace-only session compatibility was contradicted;\n  an explicit adapter is now evidenced on synthetic fixtures.'\n- Representative transaction evidence strengthened, and dependency alternatives partially\n  matured. Technical adaptation effort rises to 95–155 person-days.\n- 'Defer migration commitment: benefits remain unknown and operational recovery is\n  insufficiently assessed. Next priorities are the economic counterfactual, recovery\n  experiment and license position.'\nevidence:\n- id: E-MODEL2\n  description: Revised synthetic effort model incorporating session adapter work.\n  kind: financial-model\n  verificationStatus: reviewed\n  capturedAt: '2026-11-09'\n  reviewedBy: Analysis lead\n  limitations: Benefits, recovery and rollout remain uncalibrated; estimates are not\n    commitments.\n  sourceRefs:\n  - path: '@self'\n    startLine: 5\n    endLine: 15\nestimates:\n- id: EST-EFFORT\n  title: Technical adaptation effort\n  category: effort\n  low: 95\n  high: 155\n  unit: person-days\n  confidence: medium\n  assumptions:\n  - Explicit serialization adapter now required\n  - Includes wrapper isolation uncertainty\n  - Excludes rollout and unassessed recovery effort\n  evidenceRefs:\n  - E-MODEL2\n  - E-SERIAL\nrecommendations:\n- id: REC-ATLAS\n  conclusion: Defer migration commitment; continue focused assessment.\n  rationale: Technical feasibility is increasingly evidenced, but worthiness is not\n    established without the economic counterfactual and recovery assessment.\n  supportingFindings:\n  - F-API\n  - F-ADAPTER\n  - F-DEPS\n  limitations:\n  - Unknown benefits\n  - No recovery evidence\n  - License exception unresolved\n  decisionStatus: recommended\n  stance: defer\ngates:\n- id: G-OPS\n  title: Operational recovery assessment\n  status: unmet\n  critical: true\n  rationale: Investigation started, but no restore/replay evidence is available.\n  evidenceRefs: []\ndecisions:\n- id: DEC-EXPERIMENT\n  title: Authorize two assessment experiments\n  status: approved\n  owner: Architecture sponsor\n  dueOn: '2026-11-06'\n  rationale: Assessment experiment funding approved. This does not approve migration\n    execution.\n  evidenceRefs:\n  - E-TX\n  - E-SERIAL\n- id: DEC-COUNTERFACTUAL\n  title: Agree an economic counterfactual and horizon\n  status: proposed\n  owner: Finance sponsor\n  dueOn: '2026-11-16'\n  rationale: Worthiness cannot be evaluated without a baseline and horizon.\n  evidenceRefs:\n  - E-MODEL2\n```\n",
+        "hash": "d0f46f3e79fa31fe4ee5194d66b7f4e3ca71dbcad6649bc4696080cecf27c3c0"
+      }
+    },
+    "uiVersion": "1.0"
+  }
+}
